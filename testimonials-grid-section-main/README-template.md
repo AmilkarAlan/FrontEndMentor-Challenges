@@ -33,8 +33,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://comments-grid-design.netlify.app)
+- Solution URL: [GitHub](https://github.com/AmilkarAlan/FrontEndMentor-Challenges/tree/master/testimonials-grid-section-main)
+- Live Site URL: [Netlify](https://comments-grid-design.netlify.app)
 
 ## My process
 
