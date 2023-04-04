@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+
+</head>
+
+<body>
+  <header>
+    <img src="./images/logo.svg" alt="logo" class="logo">
+    <img src="./images/icon-menu.svg" alt="" class="nav__menu">
+    <nav class="nav__bar">
+      <img class="nav__menu-open" src="./images/icon-close-menu.svg" alt="">
+      <ul class="nav__content">
+        <li class="nav__item">
+          <a href="#" class="item-drop__link">Features <span><img src="./images/icon-arrow-down.svg" alt=""
+                class="img__arrow"></span></a>
+          <ul class="item__dropdown features">
+            <li class="dropdow__item"><a class="dropdow__link" href="#"><span><img src="./images/icon-todo.svg"
+                    alt=""></span> Todo List</a></li>
+            <li class="dropdow__item"><a class="dropdow__link" href="#"><span><img src="./images/icon-calendar.svg"
+                    alt=""></span> Calendar</a></li>
+            <li class="dropdow__item"><a class="dropdow__link" href="#"><span><img src="./images/icon-reminders.svg"
+                    alt=""></span> Reminders</a></li>
+            <li class="dropdow__item"><a class="dropdow__link" href="#"><span><img src="./images/icon-planning.svg"
+                    alt=""></span> Planning</a></li>
+          </ul>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="item-drop__link">Company <span><img src="./images/icon-arrow-down.svg" alt=""
+                class="img__arrow"></span></a>
+          <ul class="item__dropdown company">
+            <li class="dropdown__item"><a href="#" class="dropdown__link">History</a></li>
+            <li class="dropdown__item"><a href="#" class="dropdown__link">Our Team</a></li>
+            <li class="dropdown__item"><a href="#" class="dropdown__link">Blog</a></li>
+          </ul>
+        </li>
+        <li class="nav__item"><a href="" class="item__link">Careers</a></li>
+        <li class="nav__item"><a href="" class="item__link">About</a></li>
+      </ul>
+      <div class="nav__button">
+        <button class="login__btn" id="sesion__btn">Login</button>
+        <button class="register__btn" id="sesion__btn">Register</button>
+      </div>
+
+    </nav>
+  </header>
+
+  <main class="main">
+    <img class="heroImg" src="./images/image-hero-mobile.png" alt="mainImage">
+    <div class="main__content">
+      <h1 class="title">Make remote work</h1>
+      <p class="text"> Get your team in sync, no matter your location. Streamline processes,
+        create team rituals, and watch productivity soar.</p>
+      <button class="main__btn">Learn more</button>
+    </div>
+
+    <div class="brands" id="brands">
+      <img src="./images/client-databiz.svg" alt="brnad1" class="brandImg">
+      <img src="./images/client-audiophile.svg" alt="brnad2" class="brandImg">
+      <img src="./images/client-meet.svg" alt="brnad3" class="brandImg">
+      <img src="./images/client-maker.svg" alt="brnad4" class="brandImg">
+    </div>
+  </main>
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://github.com/AmilkarAlan/AmilkarAlan">Aztlan</a>.
+  </footer>
+  <script src="./script.js"></script>
+</body>
+
+</html>

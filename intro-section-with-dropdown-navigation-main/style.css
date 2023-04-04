@@ -1,0 +1,339 @@
+@import url(https://fonts.googleapis.com/css?family=Epilogue:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Epilogue;
+}
+
+body {
+    height: 100vh;
+    background-color: hsl(0, 0%, 98%);
+}
+
+/* Estilos del header */
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 24px 10px;
+}
+
+/* Estilos de la navBar */
+
+header .nav__menu {
+    width: 32px;
+    height: 27px;
+}
+
+header .nav__menu-open {
+    width: 32px;
+    height: 27px;
+    align-self: flex-end;
+    justify-self: end;
+    margin-top: 24px;
+    margin-right: 10px;
+
+}
+
+header .nav__bar {
+    height: 100vh;
+    width: 60vw;
+    position: fixed;
+    right: 0;
+    top: 0;
+    background-color: hsl(0, 0%, 98%);
+    display: none;
+    flex-direction: column;
+    transition: 2s;
+}
+
+header .nav__bar .nav__content {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 24px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    padding: 0 24px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+header .nav__bar::before {
+    content: "";
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 40%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+header .nav__bar li {
+    list-style: none;
+}
+
+header .nav__bar li span {
+    margin-left: 12px;
+}
+
+header .nav__bar a {
+    text-decoration: none;
+    color: hsl(0, 0%, 48%);
+}
+
+header .nav__bar a:hover {
+    color: hsl(0, 0%, 8%);
+}
+
+header .nav__bar .item__dropdown {
+    display: none;
+    gap: 20px;
+    padding: 12px;
+    margin-top: 16px;
+    transition: 2s;
+}
+
+header .nav__bar .nav__button {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding:0 24px;
+}
+
+header .nav__bar #sesion__btn {
+    height: 40px;
+    border-radius: 12px;
+    background-color: none;
+    color: hsl(0, 0%, 48%);
+}
+
+header .nav__bar #sesion__btn:hover {
+    color: hsl(0, 0%, 8%);
+
+}
+
+header .nav__bar .login__btn {
+    background: none;
+    border: none;
+}
+
+header .nav__bar .register__btn {
+    background: none;
+    border: 2px solid hsl(0, 0%, 48%);
+}
+
+/* Estilos del main content */
+.main {
+    display: grid;
+    gap: 24px;
+}
+
+.main .heroImg {
+    width: 100%;
+}
+
+.main .main__content {
+    display: grid;
+    gap: 12px;
+    margin-bottom: 24px;
+}
+
+.main .main__content p {
+    line-height: 1.5;
+    color: hsl(0, 0%, 41%);
+    text-align: center;
+    font-weight: 500;
+    font-size: 18px;
+    margin: 0 14px;
+}
+
+.main .main__content h1 {
+    line-height: 1.5;
+    color: hsl(0, 0%, 8%);
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    width: 100%;
+}
+
+.main .main__content .main__btn {
+    background-color: hsl(0, 0%, 8%);
+    color: hsl(0, 0%, 98%);
+    border: 2px solid hsl(0, 0%, 41%);
+    width: 120px;
+    height: 40px;
+    border-radius: 12px;
+    justify-self: center;
+}
+
+.main .main__content .main__btn:hover {
+    background-color: hsl(0, 0%, 98%);
+    color: hsl(0, 0%, 8%)
+}
+
+.main .brands {
+    display: flex;
+    gap: 32px;
+    justify-content: center;
+    margin-bottom: 64px;
+
+}
+
+.main .brands .brandImg {
+    width: 62px;
+    height: 24px;
+}
+
+/* Estilos del footer */
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+/* Tamaño 768 estilo */
+
+@media screen and (min-width: 768px) {
+
+    header {
+        display: flex;
+        padding: 24px 10px;
+    }
+
+    header .nav__menu {
+        display: none;
+    }
+
+    header .nav__menu-open {
+        display: none;
+    }
+
+    header .nav__bar {
+        width: 100%;
+        height: fit-content;
+        margin-left: 32px;
+        display: flex;
+        position: relative;
+        flex-direction: row;
+        height: fit-content;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    header .nav__bar::before {
+        content: none;
+    }
+
+    header .nav__bar .nav__content {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        margin-top: 0;
+        padding: 0;
+        margin-bottom: 0;
+    }
+
+    header .nav__bar .nav__button {
+        display: flex;
+        flex-direction: row;
+        padding: 0;
+    }
+
+    header .nav__bar #sesion__btn {
+        width: 120px;
+        height: 40px;
+        border-radius: 12px;
+        background-color: none;
+        color: hsl(0, 0%, 48%);
+    }
+
+    header .nav__bar .item__dropdown.features {
+        display: none;
+        width: 150px;
+        background-color: hsl(0, 0%, 98%);
+        position: absolute;
+        right: 90%;
+        gap: 12px;
+        padding: 12px;
+        margin-top: 16px;
+        box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.25);
+        border-radius: 10px;
+        transition: 2s;
+    }
+
+    header .nav__bar .item__dropdown.company {
+        display: none;
+        width: 90px;
+        background-color: hsl(0, 0%, 98%);
+        position: absolute;
+        gap: 12px;
+        padding: 12px;
+        margin-top: 16px;
+        box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.25);
+        border-radius: 10px;
+        transition: 2s;
+    }
+}
+
+/* tamaño 1024 estilo */
+@media screen and (min-width: 1024px) {
+    .main {
+        grid-template: 1fr / repeat(2, 1fr);
+        gap: 0;
+        padding: 24px;
+        margin-bottom: 64px;
+
+    }
+
+    .main .heroImg {
+        grid-column: 2;
+        grid-row: 1 / span 2;
+        height: 100%;
+        padding: 0 64px;
+    }
+
+    .main .main__content {
+        grid-column: 1;
+        grid-row: 1;
+        margin-right: 24px;
+        padding: 64px;
+        gap: 48px;
+    }
+
+    .main .main__content p {
+        line-height: 1.5;
+        color: hsl(0, 0%, 41%);
+        text-align: start;
+        font-weight: 500;
+        font-size: 14px;
+        margin: 0;
+    }
+
+    .main .main__content h1 {
+        line-height: 1;
+        color: hsl(0, 0%, 8%);
+        text-align: start;
+        font-size: 50px;
+        font-weight: 700;
+    }
+
+    .main .main__content .main__btn {
+        justify-self: flex-start;
+    }
+
+    .main .brands {
+        display: flex;
+        gap: 32px;
+        justify-content: flex-start;
+        margin-bottom: 0;
+        padding-left: 64px;
+    }
+    header .nav__bar .item__dropdown.features{
+        right: 94%;
+    }
+}

@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --heading-1: 150px/171px Bellefair, serif;
+    --heading-2: 100px/114px Bellefair, serif;
+    --heading-3: 56px/64px Bellefair, serif;
+    --heading-4: 32px/37px Bellefair, serif;
+    --heading-5: 28px/34px Bellefair, serif;
+    --subheading-1: 28px/32px Bellefair, serif;
+    --subheading-2: 14px/16px Bellefair, serif;
+    --nav-text: 16px/32px Barlow Condensed, sans-serif;
+    --body-text: 18px/32px Barlow Condensed, sans-serif;
+}
+
+.page{
+    height: 100vh;
+    width: 100vw;
+}
+
+.page.home{
+    height: 100vh;
+    width: 100vw;
+    background-image: url("assets/home/background-home-desktop.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    padding: 40px 0 0 50px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    
+}
+
+.page.destination{
+    
+    background-image: url("assets/destination/background-destination-desktop.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    padding: 40px 0 0 50px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+header {
+    height: fit-content;
+    grid-row: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    margin: 40px 0 0 50px;
+}
+
+header .line {
+    border-bottom: 1px solid #FFFFFF;
+    mix-blend-mode: normal;
+    opacity: 0.25;
+    width: 473px;
+    position: absolute;
+    left: 10%;
+    z-index: 1;
+}
+
+nav{
+    background-color: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(41px);
+    /* padding: 40px 150px; */
+    display: grid;
+    place-content: center;
+}
+
+header ul{
+    display: flex;
+    gap: 48px;
+    list-style: none;
+    margin: 40px 150px;
+
+}
+
+header a {
+    font: var(--nav-text);
+    letter-spacing: 2.7px;
+    text-decoration: none;
+    color: white;
+}
+
+header li:not(.active) a:hover{
+    border-bottom: 3px solid rgba(255, 255, 255, 0.5);
+}
+
+header li.active{
+    border-bottom: 3px solid #FFFFFF;
+}
+
+.main.home{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-content: center;
+    margin-top: 10%;
+}
+
+.infoPage.home{
+   height: 382px;
+   width: 450px;
+   justify-self: center;
+}
+
+.button.explore{
+    width: 274px;
+    height: 274px;
+    border-radius: 50%;
+    font: var(--heading-4);
+    letter-spacing: 2px;
+    background-color: white;
+    justify-self: center;
+    align-self: flex-end;
+    margin-bottom: 1%;
+}
+
+.button.explore:hover{
+    box-shadow: 1px 1px 1px 88px rgba(255, 255, 255, 0.1);
+}
+
